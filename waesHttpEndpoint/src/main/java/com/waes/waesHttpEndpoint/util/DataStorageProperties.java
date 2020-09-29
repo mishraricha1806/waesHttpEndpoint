@@ -1,0 +1,18 @@
+package com.waes.waesHttpEndpoint.util;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties(prefix="storage.configuration")
+public class DataStorageProperties {
+
+	private String uploadDir;
+
+	public String getUploadDir() {
+		return uploadDir;
+	}
+
+	public void setUploadDir(String uploadDir) {
+		this.uploadDir = uploadDir;
+	}
+
+}
